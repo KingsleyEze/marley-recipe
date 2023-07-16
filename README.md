@@ -7,17 +7,16 @@ Ensure you have node js version 16 or newer for the project.
 
 ### Install Dependencies
 ```bash
-npm install
-
+yarn
 or 
-
-yarn 
+npm install
 ```
 
 ### Running Project
 ```bash
-npm run dev 
 yarn dev
+or 
+npm run dev 
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -30,3 +29,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Dockerfile configuration would have been nice for deployment
 - Unit test coverage should help to capture bugs in the application
 - E2E should have also address the integration testing also
+- Also use Mui library to help with responsiveness
