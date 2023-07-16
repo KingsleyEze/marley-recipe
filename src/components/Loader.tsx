@@ -4,7 +4,7 @@ import React from 'react';
 const Loading: React.FC = () => {
   return (
     <Box sx={{ display: 'flex' }}>
-      <CircularProgress />
+      <CircularProgress style={{ position: 'fixed', top: 0, left: 0 }} />
     </Box>
   );
 };
