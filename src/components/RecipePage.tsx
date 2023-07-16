@@ -1,8 +1,16 @@
-import { Container } from '@mui/material';
+'use client';
 import React from 'react';
+import RecipeList from '@/app/recipes/page';
+import { Container } from '@mui/material';
+import Header from './Header';
 
-function RecipePage() {
-  return <Container>RecipePage</Container>;
-}
+const RecipePage: React.FC = () => {
+  return (
+    <Container>
+      <Header />
+      <RecipeList />
+    </Container>
+  );
+};
 
 export default RecipePage;
