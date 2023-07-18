@@ -1,6 +1,12 @@
 'use client';
 import React from 'react';
-import { CardActionArea, Grid, Paper, Typography } from '@mui/material';
+import {
+  CardActionArea,
+  Container,
+  Grid,
+  Paper,
+  Typography,
+} from '@mui/material';
 import classes from './page.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +15,7 @@ import useRecipe from '@/hooks/useRecipe';
 import Loading from '@/components/Loader';
 import recipe from '@/slice/recipe';
 import { notFound } from 'next/navigation';
+import Header from '@/components/Header';
 
 const RecipeList: React.FC = () => {
   const { recipeEntries: recipes, isLoading, isError } = useRecipe();
@@ -21,7 +28,8 @@ const RecipeList: React.FC = () => {
     return <Loading />;
   }
   return (
-    <div className={classes.container}>
+    <Container className={classes.container}>
+      <Header />
       <Grid container spacing={2}>
         {recipes &&
           recipes.map((recipe) => (
@@ -48,7 +56,7 @@ const RecipeList: React.FC = () => {
             </Grid>
           ))}
       </Grid>
-    </div>
+    </Container>
   );
 };
 

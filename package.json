@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch --config jest.config.js"
-
   },
   "dependencies": {
+    "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
