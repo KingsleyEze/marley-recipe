@@ -20,13 +20,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Trade Offs
-
-- Use Contentful SDK instead of integrating directly using graphql
-- Used Contentful SDK to replace react toolkit for fetching data
-- Additional configuration is need to address committing error by using Husky
-- Dockerfile configuration would have been nice for deployment
-- Unit test coverage should help to capture bugs in the application
-- E2E should have also address the integration testing also
-- Also use Mui library to help with responsiveness
